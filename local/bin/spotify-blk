@@ -1,0 +1,8 @@
+GLYPH=
+METADATA=$(playerctl -p spotify metadata --format "{{ xesam:artist }} / {{ xesam:title }}")
+
+if [ -n "$METADATA" ]; then
+	echo "$GLYPH" "$METADATA"
+else
+	echo "$GLYPH" "..."
+fi

@@ -1,0 +1,8 @@
+*.old
+*_old/
+
+# Local dirs
+config/nvim/plugged
+config/nvim/undodir
+config/nvim/.netrwhist
+config/newsboat/urls

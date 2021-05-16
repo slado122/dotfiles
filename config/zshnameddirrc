@@ -1,0 +1,12 @@
+hash -d cac=/home/slado122/.cache 
+hash -d cf=/home/slado122/.config 
+hash -d D=/home/slado122/Downloads 
+hash -d d=/home/slado122/Documents 
+hash -d dt=/home/slado122/.local/share 
+hash -d h=/home/slado122 
+hash -d m=/home/slado122/Music 
+hash -d mn=/mnt 
+hash -d pp=/home/slado122/Pictures 
+hash -d sc=/home/slado122/.local/bin 
+hash -d src=/home/slado122/.local/src 
+hash -d vv=/home/slado122/Videos 

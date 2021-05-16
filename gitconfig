@@ -1,0 +1,7 @@
+[user]
+	email = me@dmytroohorodnik.com
+	name = Dmytro Ohorodnik
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main

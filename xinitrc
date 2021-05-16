@@ -1,0 +1,1 @@
+/home/slado122/.config/xinitrc

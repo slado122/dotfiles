@@ -1,0 +1,35 @@
+{
+  "python.formatting.provider": "black",
+  "diagnostic.refreshOnInsertMode": true,
+  "suggest.noselect": false,
+  "suggest.enablePreview": true,
+  "codeLens.enable": true,
+  "suggest.maxPreviewWidth": 100,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.maxWindowHeight": 20,
+  "diagnostic.errorSign": "✖",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "●",
+  "diagnostic.hintSign": "○",
+  "diagnostic.enableSign": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.sources": [
+    { "name": "buffer", "expand": true },
+    { "name": "file", "expand": true }
+  ],
+  "explorer.git.icon.status.added": "✚",
+  "explorer.git.icon.status.deleted": "✖",
+  "explorer.git.icon.status.renamed": "➜",
+  "explorer.git.icon.status.unmerged": "═",
+  "explorer.git.icon.rootStatus.untracked": "?",
+  "explorer.git.icon.status.modified": "✹",
+  "explorer.git.icon.status.ignored": "☒",
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"]
+  },
+  "explorer.width": 30,
+  "suggest.defaultSortMethod": "alphabetical",
+  "diagnostic.messageDelay": 0,
+  "suggest.languageSourcePriority": 100
+}
