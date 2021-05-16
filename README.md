@@ -1,4 +1,4 @@
-![Screenshot](https://github.com/slado122/dotfiles/blob/main/screenshot.png)
+![Screenshot](https://github.com/slado122/dotfiles/blob/main/images/screenshot.png)
 
 # Inspirations
 + [ThePrimeagen](https://github.com/awesome-streamers/awesome-streamerrc/tree/master/ThePrimeagen)
