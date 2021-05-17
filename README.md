@@ -1,4 +1,5 @@
-![Screenshot](https://github.com/slado122/dotfiles/blob/main/images/screenshot.png)
+![Gruvbox Screenshot](https://github.com/slado122/dotfiles/blob/main/images/screenshots/gruvbox.png)
+![Nord Screenshot](https://github.com/slado122/dotfiles/blob/main/images/screenshots/nord.png)
 
 # Inspirations
 + [ThePrimeagen](https://github.com/awesome-streamers/awesome-streamerrc/tree/master/ThePrimeagen)
