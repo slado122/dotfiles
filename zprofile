@@ -6,7 +6,13 @@
 # to clean up.
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':')"
+export PATH="$PATH:$HOME/.local/bin"
+# Adds `~/.local/bin/statusbar` to $PATH
+export PATH="$PATH:$HOME/.local/bin/statusbar"
+# Adds `~/.local/bin/cron` to $PATH
+export PATH="$PATH:$HOME/.local/bin/cron"
+# Adds `~/.local/bin/i3cmds` to $PATH
+export PATH="$PATH:$HOME/.local/bin/i3cmds"
 
 # Default programs:
 export EDITOR="nvim"
