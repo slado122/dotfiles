@@ -65,7 +65,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'vim-airline/vim-airline'
-Plug 'flazz/vim-colorschemes'
+Plug 'arcticicestudio/nord-vim'
 
 " Debugger Plugins
 Plug 'puremourning/vimspector'
@@ -100,7 +100,8 @@ let g:go_auto_sameids = 1
 let g:airline_powerline_fonts = 1
 let g:powerline_symbols='unicode'
 
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme nord
 set background=dark
 
 if executable('rg')
