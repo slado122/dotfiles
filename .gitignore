@@ -6,3 +6,6 @@ config/nvim/plugged
 config/nvim/undodir
 config/nvim/.netrwhist
 config/newsboat/urls
+
+# Cache
+__pycache__/
