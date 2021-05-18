@@ -9,3 +9,7 @@ config/newsboat/urls
 
 # Cache
 __pycache__/
+
+# zsh
+**/.zcompdump
+
