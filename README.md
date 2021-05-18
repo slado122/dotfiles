@@ -1,4 +1,7 @@
+# Gruvbox Screenshot
 ![Gruvbox Screenshot](https://github.com/slado122/dotfiles/blob/main/images/screenshots/gruvbox.png)
+
+# Nord Screenshot
 ![Nord Screenshot](https://github.com/slado122/dotfiles/blob/main/images/screenshots/nord.png)
 
 # Inspirations
