@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Use neovim for vim if present.
+# Use neovim for vim
 alias vim="nvim"
 
 # Verbosity and settings that you pretty much just always are going to want.

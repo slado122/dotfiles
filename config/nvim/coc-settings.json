@@ -31,5 +31,6 @@
   "explorer.width": 30,
   "suggest.defaultSortMethod": "alphabetical",
   "diagnostic.messageDelay": 0,
-  "suggest.languageSourcePriority": 100
+  "suggest.languageSourcePriority": 100,
+  "git.addGBlameToVirtualText": true
 }

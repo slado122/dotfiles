@@ -20,6 +20,7 @@ set incsearch
 set termguicolors
 set scrolloff=8
 set noshowmode
+set clipboard=unnamedplus
 
 " For Pytest
 filetype on
@@ -103,6 +104,7 @@ let g:powerline_symbols='unicode'
 " colorscheme gruvbox
 colorscheme nord
 set background=dark
+set t_Co=256
 
 if executable('rg')
     let g:rg_derive_root='true'
@@ -146,7 +148,8 @@ let g:coc_global_extensions = [
     \ 'coc-docker',
     \ 'coc-sql',
     \ 'coc-terminal',
-    \ 'coc-calc'
+    \ 'coc-calc',
+    \ 'coc-git'
     \ ]
 
 " Prettifiers
@@ -182,6 +185,7 @@ nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 
 nmap <leader>cr :CocRestart
 nmap <leader>ct <Plug>(coc-terminal-toggle)
+nmap <leader>cp <Plug>(coc-terminal-repl)
 
 " Testing
 nmap <silent> <C-t>n :TestNearest<CR>
