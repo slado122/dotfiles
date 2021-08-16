@@ -60,6 +60,7 @@ Plug 'vim-test/vim-test'
 Plug 'Yggdroot/indentLine'
 Plug 'vimwiki/vimwiki'
 Plug 'mhinz/vim-startify'
+Plug 'jjdn/vim-dbml'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'gruvbox-community/gruvbox'
@@ -119,10 +120,10 @@ let g:indentLine_char = '|'
 nmap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nmap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nmap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>h :wincmd h<CR>
-nmap <leader>j :wincmd j<CR>
-nmap <leader>k :wincmd k<CR>
-nmap <leader>l :wincmd l<CR>
+nmap <leader>h <C-w>h
+nmap <leader>j <C-w>j
+nmap <leader>k <C-w>k
+nmap <leader>l <C-w>l
 nmap <leader>u :UndotreeShow<CR>
 nmap <Leader>ps :Rg<SPACE>
 nmap <C-p> :GFiles<CR>
@@ -149,7 +150,8 @@ let g:coc_global_extensions = [
     \ 'coc-sql',
     \ 'coc-terminal',
     \ 'coc-calc',
-    \ 'coc-git'
+    \ 'coc-git',
+    \ 'coc-clangd'
     \ ]
 
 " Prettifiers
