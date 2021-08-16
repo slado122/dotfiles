@@ -42,3 +42,5 @@ alias \
 alias sudo="doas"
 alias yay="paru"
 alias find="fd"
+
+alias ipp="curl 2ip.ru"
