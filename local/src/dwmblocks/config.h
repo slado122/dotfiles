@@ -4,11 +4,7 @@ static const Block blocks[] = {
     /*Icon*/ /*Command*/ /*Update Interval*/ /*Update Signal*/
     {"", "xkb-switch | xargs -I {} echo \"|{}|\"", 1, 30},
     {"", "spotify-blk", 10, 5},
-    {"", "cat /tmp/recordingicon 2>/dev/null", 0, 9},
-    {"", "pacpackages", 0, 8},
-    {"", "news", 0, 6},
     {"", "memory", 10, 14},
-    {"", "cpu", 10, 18},
     {"", "moonphase", 18000, 17},
     {"", "weather", 18000, 5},
     {"", "mailbox", 180, 12},
@@ -19,7 +15,6 @@ static const Block blocks[] = {
     {"", "battery", 5, 3},
     {"", "clock", 60, 1},
     {"", "internet", 5, 4},
-    {"", "help-icon", 0, 15},
 };
 
 // Sets delimiter between status commands. NULL character ('\0') means no

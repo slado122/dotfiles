@@ -43,4 +43,4 @@ alias sudo="doas"
 alias yay="paru"
 alias find="fd"
 
-alias ipp="curl 2ip.ru"
+alias pelico-pip-install="pip install --index-url http://nexus.pelico.net/repository/pypi/simple --trusted-host nexus.pelico.net"
