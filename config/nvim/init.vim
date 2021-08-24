@@ -103,9 +103,9 @@ let g:airline_powerline_fonts = 1
 let g:powerline_symbols='unicode'
 
 set background=dark
-" colorscheme gruvbox
+colorscheme gruvbox
 " colorscheme nord
-colorscheme solarized8
+" colorscheme solarized8
 
 if executable('rg')
     let g:rg_derive_root='true'

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Waiting until Xresources are loaded.
+until [ -n $(xgetres background) ] && [ -n $(xgetres foreground) ]
+do
+  sleep 0.01
+done
+
+background=$(xgetres background)
+foreground=$(xgetres foreground)
+
+# Kill and running dunst instances and start
+killall > /dev/null 2>&1; dunst -config ~/.config/dunst/dunstrc \
+  -cb $background \
+  -lb $background \
+  -nb $background \
+  -cf $foreground \
+  -lf $foreground \
+  -nf $foreground \
+  -bf $foreground \
+  -frame_color $foreground

@@ -4,11 +4,11 @@
 # Add this when you include flatpak in your system
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
+xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources &   # Uncomment to use Xresources colors/settings on startup
 setxkbmap -layout us,pl,ru,ua -option grp:alt_shift_toggle
 setxkbmap -option caps:swapescape
 setbg &			# set the background with the `setbg` script
-#xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources &	# Uncomment to use Xresources colors/settings on startup
 xcompmgr &		# xcompmgr for transparency
-dunst &			# dunst for notifications
 xset r rate 200 40 &	# Speed xrate up
 unclutter &		# Remove mouse when idle
+dunst-xresources &			# dunst for notifications

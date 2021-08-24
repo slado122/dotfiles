@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+then
+    echo "Please specify a value to be queried."
+else
+    xrdb -query | grep "$1" | cut -f 2
+fi
