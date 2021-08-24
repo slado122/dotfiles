@@ -4,9 +4,13 @@
 # Add this when you include flatpak in your system
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
-xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources &   # Uncomment to use Xresources colors/settings on startup
-setxkbmap -layout us,pl,ru,ua -option grp:alt_shift_toggle
+# For some reason, dwm doesn't read Xresources on start up, if it was run with &
+xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources
+# For other apps (such as dunst)
+xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources &
+
 setxkbmap -option caps:swapescape
+setxkbmap -layout us,pl,ru,ua -option grp:alt_shift_toggle
 setbg &			# set the background with the `setbg` script
 xcompmgr &		# xcompmgr for transparency
 xset r rate 200 40 &	# Speed xrate up
