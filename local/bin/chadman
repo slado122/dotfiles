@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+program=$(man -k . | dmenu -l 30 | awk '{print $1}')
+[ ! -z "$program" ] && $TERMINAL -e man "$program"

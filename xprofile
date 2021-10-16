@@ -10,7 +10,7 @@ xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources
 xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/Xresources &
 
 setxkbmap -option caps:swapescape
-setxkbmap -layout us,pl,ru,ua -option grp:alt_shift_toggle
+setxkbmap -layout pl,ru,ua -option grp:alt_space_toggle
 setbg &			# set the background with the `setbg` script
 xcompmgr &		# xcompmgr for transparency
 xset r rate 200 40 &	# Speed xrate up

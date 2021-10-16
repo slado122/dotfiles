@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 GLYPH=
 METADATA=$(playerctl -p spotify metadata --format "{{ xesam:artist }} / {{ xesam:title }}")
 

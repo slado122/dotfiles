@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo $(curl ifconfig.me 2>/dev/null)
+notify-send "$(curl ifconfig.me 2>/dev/null)"

@@ -60,6 +60,7 @@ Plug 'vim-test/vim-test'
 Plug 'Yggdroot/indentLine'
 Plug 'vimwiki/vimwiki'
 Plug 'mhinz/vim-startify'
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'gruvbox-community/gruvbox'
@@ -223,6 +224,11 @@ au BufNewFile,BufRead *.js
 au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix
+
+" Indentation for C
+au BufNewFile,BufRead *.c
+    \ set shiftwidth=2 |
+    \ set cindent
 
 " Python host
 let g:python3_host_prog = '/usr/bin/python'
