@@ -230,6 +230,11 @@ au BufNewFile,BufRead *.c
     \ set shiftwidth=2 |
     \ set cindent
 
+" Indentation for C++
+au BufNewFile,BufRead *.cpp
+    \ set shiftwidth=2 |
+    \ set cindent
+
 " Python host
 let g:python3_host_prog = '/usr/bin/python'
 
