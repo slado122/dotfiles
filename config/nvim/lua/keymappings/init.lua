@@ -1,0 +1,6 @@
+require('keymappings.nvim')
+require('keymappings.telescope')
+require('keymappings.nvim-tree')
+require('keymappings.commentary')
+require('keymappings.lspconfig')
+require('keymappings.vim-maximizer')

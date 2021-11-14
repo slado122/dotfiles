@@ -2,9 +2,10 @@
 *_old/
 
 # Local dirs
-config/nvim/plugged
-config/nvim/undodir
-config/nvim/.netrwhist
+config/nvim*/plugged
+config/nvim*/plugin
+config/nvim*/undodir
+config/nvim*/.netrwhist
 config/newsboat/urls
 
 # Cache
@@ -14,3 +15,5 @@ __pycache__/
 **/.zcompdump
 
 .idea
+
+node_modules

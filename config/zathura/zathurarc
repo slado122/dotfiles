@@ -1,1 +1,2 @@
-/home/slado122/.cache/wal/zathurarc
+set sandbox none
+set selection-clipboard clipboard
