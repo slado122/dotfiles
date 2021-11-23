@@ -1,3 +1,5 @@
+vim.api.nvim_set_var('nvim_tree_root_folder_modifier', ':t:r')
+
 require('nvim-tree').setup {
     disable_netrw = true,
     hijack_netrw = true,

@@ -18,8 +18,8 @@ vim.api.nvim_set_keymap('i', ';;', '<Esc>', generic_opts_any)
 
 vim.api.nvim_set_keymap('n', '<C-Up>', ':resize -2<CR>', generic_opts_any)
 vim.api.nvim_set_keymap('n', '<C-Down>', ':resize +2<CR>', generic_opts_any)
-vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical resize -2<CR>', generic_opts_any)
-vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical resize +2<CR>', generic_opts_any)
+vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical resize +2<CR>', generic_opts_any)
+vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical resize -2<CR>', generic_opts_any)
 
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', generic_opts_any)
 vim.api.nvim_set_keymap('t', 'jk', '<C-\\><C-n>', generic_opts_any)

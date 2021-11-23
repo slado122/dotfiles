@@ -32,6 +32,15 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+    use {'psf/black', branch = 'stable'}
+    use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
+    use {
+        "ThePrimeagen/refactoring.nvim",
+        requires = {
+            {"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}
+        }
+    }
+    use 'vim-test/vim-test'
 
     if packer_bootstrap then require('packer').sync() end
 end)

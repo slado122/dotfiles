@@ -14,6 +14,8 @@ vim.api.nvim_set_keymap('n', '<C-k>', ':lua vim.lsp.buf.signature_help()<CR>',
                         generic_opts_any)
 vim.api.nvim_set_keymap('n', '<Leader>rn', ':lua vim.lsp.buf.rename()<CR>',
                         generic_opts_any)
+vim.api.nvim_set_keymap('n', '<Leader>ca', ':lua vim.lsp.buf.code_action()<CR>',
+                        generic_opts_any)
 vim.api.nvim_set_keymap('n', '<Leader>[',
                         ':lua vim.lsp.diagnostic.goto_prev()<CR>',
                         generic_opts_any)
