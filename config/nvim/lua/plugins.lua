@@ -17,7 +17,6 @@ return require('packer').startup(function(use)
     use 'tpope/vim-dadbod'
     use 'kristijanhusak/vim-dadbod-ui'
     use 'tpope/vim-commentary'
-    use 'dhruvasagar/vim-table-mode'
     use {
         'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
@@ -41,6 +40,8 @@ return require('packer').startup(function(use)
         }
     }
     use 'vim-test/vim-test'
+    use 'folke/zen-mode.nvim'
+    use 'mhinz/vim-startify'
 
     if packer_bootstrap then require('packer').sync() end
 end)
