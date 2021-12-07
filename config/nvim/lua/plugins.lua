@@ -22,7 +22,6 @@ return require('packer').startup(function(use)
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
     use 'neovim/nvim-lspconfig'
-    use 'williamboman/nvim-lsp-installer'
     use 'vimwiki/vimwiki'
     use 'dhruvasagar/vim-table-mode'
     use 'szw/vim-maximizer'
@@ -33,12 +32,6 @@ return require('packer').startup(function(use)
     use 'hrsh7th/nvim-cmp'
     use {'psf/black', branch = 'stable'}
     use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
-    use {
-        "ThePrimeagen/refactoring.nvim",
-        requires = {
-            {"nvim-lua/plenary.nvim"}, {"nvim-treesitter/nvim-treesitter"}
-        }
-    }
     use 'vim-test/vim-test'
     use 'folke/zen-mode.nvim'
     use 'mhinz/vim-startify'

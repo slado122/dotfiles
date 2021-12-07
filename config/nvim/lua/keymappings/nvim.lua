@@ -13,7 +13,7 @@ vim.api.nvim_set_keymap('n', '<Leader>j', '<C-w>j', generic_opts_any)
 vim.api.nvim_set_keymap('n', '<Leader>k', '<C-w>k', generic_opts_any)
 vim.api.nvim_set_keymap('n', '<Leader>l', '<C-w>l', generic_opts_any)
 
-vim.api.nvim_set_keymap('n', '<Leader><Leader>', ':w<CR>', generic_opts_any)
+vim.api.nvim_set_keymap('n', '<Leader><Leader>', ':w!<CR>', generic_opts_any)
 vim.api.nvim_set_keymap('i', ';;', '<Esc>', generic_opts_any)
 
 vim.api.nvim_set_keymap('n', '<C-Up>', ':resize -2<CR>', generic_opts_any)
