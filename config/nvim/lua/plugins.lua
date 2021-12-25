@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
     use 'vim-test/vim-test'
     use 'folke/zen-mode.nvim'
     use 'mhinz/vim-startify'
+    use 'windwp/nvim-autopairs'
 
     if packer_bootstrap then require('packer').sync() end
 end)
