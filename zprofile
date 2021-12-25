@@ -2,19 +2,6 @@
 
 # zsh profile file. Runs on login. Environmental variables are set here.
 
-# Adds `~/.local/bin` to $PATH
-export PATH="$PATH:$HOME/.local/bin"
-# Adds `~/.local/bin/statusbar` to $PATH
-export PATH="$PATH:$HOME/.local/bin/statusbar"
-# Adds `~/.local/bin/st` to $PATH
-export PATH="$PATH:$HOME/.local/bin/st"
-
-# Default programs:
-export EDITOR="nvim"
-export TERMINAL="st"
-export BROWSER="brave"
-export READER="zathura"
-
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -27,6 +14,21 @@ export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+
+# Adds `~/.local/bin` to $PATH
+export PATH="$PATH:$HOME/.local/bin"
+# Adds `~/.local/bin/statusbar` to $PATH
+export PATH="$PATH:$HOME/.local/bin/statusbar"
+# Adds `~/.local/bin/st` to $PATH
+export PATH="$PATH:$HOME/.local/bin/st"
+# Adds `~/.local/share/go/bin` to $PATH
+export PATH="$PATH:$GOPATH/bin"
+
+# Default programs:
+export EDITOR="nvim"
+export TERMINAL="st"
+export BROWSER="brave"
+export READER="zathura"
 
 # Other program settings:
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
