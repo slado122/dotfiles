@@ -1,0 +1,225 @@
+#!/usr/bin/env bash
+
+# dmenu emoticon selection
+
+# put fonts here, there maybe some encoding thing i did wrong
+_dmenu="env LANG=ja_JP.utf8 LC_CTYPE=ja_JP.utf8 dmenu -fn mona-10"
+
+# put some  happy emoticons :)
+read -r -d '' _happy_emotes << HAPPINESS_END
+｡◕‿◕｡
+(▰˘◡˘▰)
+(-‿◦☀)
+(。^_-)ノ
+｡◕‿‿◕｡
+(づ｡◕‿‿◕｡)づ
+(✿◠‿◠)
+(。⌒∇⌒)。
+(=^-ω-^=)
+｡^‿^｡
+（‐＾▽＾‐）
+ヾ(=^▽^=)ノ
+＼(o⌒∇⌒o)/
+HAPPINESS_END
+
+# put some laughing emoticons XDDD
+read -r -d '' _laughing_emotes << LAUGHS_END
+о(ж＞▽＜)ｙ ☆
+(ノ＞▽＜。)ノ
+o(≧∇≦o)
+p(≧∇≦)q
+（〜^∇^)〜
+(ノ^o^)ノ
+o(>▽<)o
+(●´∀｀●)
+(*⌒∇⌒)ﾉ
+*･゜ﾟ･*:.｡.｡.:*･’(´◜◞ਊ◟◝｀)’･*:.｡.｡.:*･゜ﾟ･*
+LAUGHS_END
+
+# put some sad emoticons :(
+read -r -d "" _sad_emotes << SAD_END
+(✖╭╮✖)
+(=ｘェｘ=)
+U￣ｰ￣U
+（ー△ー；）
+(一。一;;）
+(▰︶︹︺▰)
+(︶ω︶)
+(っ˘̩╭╮˘̩)っ
+.・゜゜・（／。＼）・゜゜・．
+｡：ﾟ(｡ﾉω＼｡)ﾟ･｡
+o(╥﹏╥)o
+(━┳━ _ ━┳━)
+(。┰ω┰。)
+｡：ﾟ(｡ﾉω＼｡)ﾟ･｡
+(▰˘︹˘▰)
+(っ˘̩╭╮˘̩)っ
+SAD_END
+
+# put some angry emotes >.<
+read -r -d "" _angry_emotes << ANGER_END
+ヽ(≧Д≦)ノ
+（＞д＜）
+(*￣m￣)
+(●￣(ｴ)￣●)
+ヘ(￣ω￣ヘ)
+〜(￣△￣〜)
+(ﾉ≧∀≦)ﾉ
+(＞ε＜)
+(*≧m≦*)
+｡゜(｀Д´)゜｡
+(･｀ｪ´･)つ
+（≧▼≦；)
+ʕ •̀ o •́ ʔ
+ANGER_END
+
+# put some shy emotes ._.'
+read -r -d "" _shy_emotes << SHY_END
+(｡ﾉω＼｡)
+｡＾⋏＾｡
+ヾ(＠⌒ー⌒＠)ノ
+o(〃＾▽＾〃)o
+(∩。∩;)
+r(^ω^*)
+(〃⌒∇⌒)ゞ
+c(＞ω＜)ゞ
+(///∇//)
+(/ω＼)
+(／。＼)
+|･ω･｀)
+|ω・）
+（*/∇＼*）
+(／(ｴ)＼)
+(*/∇＼*)
+(つω⊂* )
+(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄
+(v〃ω〃)八(〃ω〃v)
+(●///▽///●)
+SHY_END
+
+# put some animal emotes :meow:
+read -r -d "" _animal_emotes << ANIMAL_END
+(^._.^)ﾉ
+(●￣(ｴ)￣●)
+U￣ｰ￣U
+(=ｘェｘ=)
+(=^･ｪ･^=)
+(∪￣ ㋓ ￣∪)
+ʕ•͡ω•ʔ
+ʕ•̀ω•́ʔ✧
+ʕ◉ᴥ◉ʔ
+ (｡ﾉ･(ｴ)･｡)ﾉ
+ξ(｡◕ˇ◊ˇ◕｡)ξ
+⋋( ◕ ∧ ◕ )⋌
+（ΦωΦ）
+(=ＴェＴ=)
+(,,◕　⋏　◕,,)
+∪･ω･∪
+U＾ェ＾U
+(≚ᄌ≚)
+ANIMAL_END
+
+# put some ami best emotes XDDDDDDD
+read -r -d "" _ami_emotes << AMI_END
+(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧
+(≚ᄌ≚)ℒℴѵℯ❤
+(｡♥‿♥｡)
+AMI_END
+
+# put some other emotes D:
+read -r -d "" _other_emotes << OTHERS_END
+(≚ᄌ≚)ƶƵ
+(∪｡∪)｡｡｡zzz
+╰( ´・ω・)つ──☆✿✿✿✿✿✿
+(人-ω-)｡o.ﾟ｡*･♡Good Night♡･*｡ﾟo｡(-ω-人)
+(◦′ᆺ‵◦) ♬° ✧❥✧¸.•*¨*✧♡✧ ℒℴѵℯ ✧♡✧*¨*•.❥
+.*･ﾟ☆ндрруヾ(*＾-＾*)ﾉвiятнDду☆ﾟ･*.
+ℓ ❤ ϚϦοςӧԼձϮϵ❣⃛
+（*＾ω＾）人（＾ω＾*）
+OTHERS_END
+
+# put some good characters! <3
+read -r -d "" _chars << CHARS_END
+❤
+☆
+☆*･゜ﾟ･**･゜ﾟ･*☆
+！
+「
+」
+『
+』
+〜
+？
+。
+♫
+CHARS_END
+
+# these are the categories~
+read -r -d "" _cat << CAT_END
+happy
+laughing
+sad
+angry
+shy
+animal
+ami
+other
+characters
+CAT_END
+
+for (( ; ; )) ; do
+	# show choose the emote type! :3
+	_type=$(echo "$_cat" | $_dmenu)
+	if [[ -z "$_type" ]] ; then
+		break
+	fi
+
+	# get the results >3<
+	_res=""
+
+	# happy happy happy~
+	if [[ "$_type" == "happy" ]] ; then
+		_res=$(echo "$_happy_emotes" | $_dmenu)
+
+	# laugh laugh laugh~
+	elif [[ "$_type" == "laughing" ]] ; then
+		_res=$(echo "$_laughing_emotes" | $_dmenu)
+
+	# sad sad sad awwwww
+	elif [[ "$_type" == "sad" ]] ; then
+		_res=$(echo "$_sad_emotes" | $_dmenu)
+
+	# angry angry rawwrrr
+	elif [[ "$_type" == "angry" ]] ; then
+		_res=$(echo "$_angry_emotes" | $_dmenu)
+
+	# -hides away-
+	elif [[ "$_type" == "shy" ]] ; then
+		_res=$(echo "$_shy_emotes" | $_dmenu)
+
+	# animals are good!
+	elif [[ "$_type" == "animal" ]] ; then
+		_res=$(echo "$_animal_emotes" | $_dmenu)
+
+	# some of my favourites :)
+	elif [[ "$_type" == "ami" ]] ; then
+		_res=$(echo "$_ami_emotes" | $_dmenu)
+
+	# other emotes some more XD
+	elif [[ "$_type" == "other" ]] ; then
+		_res=$(echo "$_other_emotes" | $_dmenu)
+
+	# characters + $ ~ !
+	elif [[ "$_type" == "characters" ]] ; then
+		_res=$(echo "$_chars" | $_dmenu)
+
+	fi
+
+	# put the choosed emnote on the clipboard! yay :)
+	if [[ ! -z "$_res" ]] ; then
+        echo "$_res" | xclip -sel clip
+		break
+	fi
+done
+
+# thanks for using me!
