@@ -39,6 +39,10 @@ return require('packer').startup(function(use)
     use 'mhinz/vim-startify'
     use 'windwp/nvim-autopairs'
 	use 'simrat39/rust-tools.nvim'
+    use {
+      'phaazon/hop.nvim',
+      branch = 'v1',
+    }
 
     if packer_bootstrap then require('packer').sync() end
 end)
