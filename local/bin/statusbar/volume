@@ -16,7 +16,12 @@ esac
 [ $(pamixer --get-mute) = true ] && echo 🔇 && exit
 
 vol="$(pamixer --get-volume)"
-vol=${vol:-"100"}
+# Waiting until volume is loaded.
+until [ -n "$vol" ] && [ "$vol" -eq "$vol" ]
+do
+  sleep 0.01
+  vol="$(pamixer --get-volume)"
+done
 
 if [ "$vol" -gt "70" ]; then
 	icon="🔊"
