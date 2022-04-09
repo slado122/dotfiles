@@ -22,3 +22,5 @@
 
 [diff]
     colorMoved = default
+[credential]
+	helper = store
