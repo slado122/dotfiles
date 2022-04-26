@@ -1,4 +1,4 @@
-generic_opts_any = require('keymappings.common').generic_opts_any
+local generic_opts_any = require('keymappings.common').generic_opts_any
 
 vim.g.mapleader = ' '
 

@@ -43,6 +43,9 @@ return require('packer').startup(function(use)
       'phaazon/hop.nvim',
       branch = 'v1',
     }
+	use 'mfussenegger/nvim-dap'
+	use 'mfussenegger/nvim-dap-python'
+	use 'nvim-telescope/telescope-dap.nvim'
 
     if packer_bootstrap then require('packer').sync() end
 end)
