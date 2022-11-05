@@ -3,7 +3,7 @@ vim.cmd [[
     filetype plugin indent on
     set colorcolumn=80
     highlight ColorColumn ctermbg=0 guibg=lightgrey
-    colorscheme gruvbox
+    colorscheme tokyonight
 
     set tabstop=4
     set softtabstop=4
