@@ -9,7 +9,6 @@ require('lazy').setup({
     { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { "github/copilot.vim",                tag = 'v1.29.0' },
-    { "vim-test/vim-test",                 tag = 'v2.1.0' },
     { "tpope/vim-commentary" },
     { "ellisonleao/gruvbox.nvim" },
     { "lewis6991/gitsigns.nvim",           tag = 'v0.8.0' },
@@ -44,5 +43,16 @@ require('lazy').setup({
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    {
+        "nvim-neotest/neotest",
+        dependencies = {
+            "nvim-neotest/nvim-nio",
+            "nvim-lua/plenary.nvim",
+            "antoinemadec/FixCursorHold.nvim",
+            "nvim-treesitter/nvim-treesitter",
+            "nvim-neotest/neotest-python",
+            "rouge8/neotest-rust",
+        }
     }
 })
