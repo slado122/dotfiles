@@ -3,9 +3,7 @@ local neotest = require("neotest")
 neotest.setup({
     adapters = {
         require("neotest-python")({}),
-        require("neotest-rust") {
-            args = { "--no-capture" },
-        }
+        require('rustaceanvim.neotest')
     },
 })
 

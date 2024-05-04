@@ -29,7 +29,6 @@ require('mason-lspconfig').setup({
 })
 
 require('lspconfig').tsserver.setup({})
-require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').pyright.setup({})
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').dockerls.setup({})

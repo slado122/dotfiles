@@ -12,7 +12,7 @@ require('lazy').setup({
     { "tpope/vim-commentary" },
     { "ellisonleao/gruvbox.nvim" },
     { "lewis6991/gitsigns.nvim",           tag = 'v0.8.0' },
-    { 'L3MON4D3/LuaSnip' },
+    { 'L3MON4D3/LuaSnip',                  tag = 'v2.3.0' },
     {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
@@ -52,7 +52,11 @@ require('lazy').setup({
             "antoinemadec/FixCursorHold.nvim",
             "nvim-treesitter/nvim-treesitter",
             "nvim-neotest/neotest-python",
-            "rouge8/neotest-rust",
         }
+    },
+    {
+        'mrcjkb/rustaceanvim',
+        version = '^4',
+        lazy = false, -- This plugin is already lazy
     }
 })
