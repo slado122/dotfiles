@@ -58,5 +58,6 @@ require('lazy').setup({
         'mrcjkb/rustaceanvim',
         version = '^4',
         lazy = false, -- This plugin is already lazy
-    }
+    },
+    { "szw/vim-maximizer" }
 })

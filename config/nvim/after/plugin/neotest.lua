@@ -2,8 +2,10 @@ local neotest = require("neotest")
 
 neotest.setup({
     adapters = {
-        require("neotest-python")({}),
-        require('rustaceanvim.neotest')
+        require('rustaceanvim.neotest'),
+        require("neotest-python")({
+            args = { "-vv" },
+        }),
     },
 })
 
@@ -15,4 +17,7 @@ vim.keymap.set('n', '<leader>ta', function()
 end, {})
 vim.keymap.set('n', '<leader>ts', function()
     neotest.run.stop()
+end, {})
+vim.keymap.set('n', '<leader>tf', function()
+    neotest.run.run(vim.fn.expand("%"))
 end, {})
